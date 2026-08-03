@@ -1,0 +1,13 @@
+sequence_number,session_id,planned_run_id,family_id,variant_id,label,family_repetition,planned_start_utc,status,actual_start_utc,actual_end_utc,exit_code,evidence_root,error_message,central_status,central_completed_utc,central_error
+1,S03,S03-001-S2-V1,S2,V1,1,1,,planned,,,,,,,,
+2,S03,S03-002-B2-V1,B2,V1,0,1,,planned,,,,,,,,
+3,S03,S03-003-S2-V2,S2,V2,1,2,,planned,,,,,,,,
+4,S03,S03-004-B3-V1,B3,V1,0,1,,planned,,,,,,,,
+5,S03,S03-005-B1-V1,B1,V1,0,1,,planned,,,,,,,,
+6,S03,S03-006-B1-V2,B1,V2,0,2,,planned,,,,,,,,
+7,S03,S03-007-B3-V2,B3,V2,0,2,,planned,,,,,,,,
+8,S03,S03-008-S1-V1,S1,V1,1,1,,planned,,,,,,,,
+9,S03,S03-009-S3-V1,S3,V1,1,1,,planned,,,,,,,,
+10,S03,S03-010-S3-V2,S3,V2,1,2,,planned,,,,,,,,
+11,S03,S03-011-B2-V2,B2,V2,0,2,,planned,,,,,,,,
+12,S03,S03-012-S1-V2,S1,V2,1,2,,planned,,,,,,,,

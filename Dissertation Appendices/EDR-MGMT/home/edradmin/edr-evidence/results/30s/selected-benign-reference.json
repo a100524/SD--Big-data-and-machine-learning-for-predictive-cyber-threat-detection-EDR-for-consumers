@@ -1,0 +1,89 @@
+{
+  "source": "training benign windows only",
+  "features": {
+    "sysmon_process_create_count": {
+      "mean": 0.9583333333333334,
+      "standard_deviation": 2.715375460021853,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    },
+    "sysmon_unique_process_image_count": {
+      "mean": 0.5,
+      "standard_deviation": 1.1547005383792515,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    },
+    "sysmon_powershell_process_count": {
+      "mean": 0.0,
+      "standard_deviation": 0.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    },
+    "sysmon_cmd_process_count": {
+      "mean": 0.0,
+      "standard_deviation": 0.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    },
+    "sysmon_unique_parent_child_pair_count": {
+      "mean": 0.5,
+      "standard_deviation": 1.1547005383792515,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    },
+    "sysmon_network_connect_count": {
+      "mean": 1.0416666666666667,
+      "standard_deviation": 1.7435396627423063,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 2.0
+    },
+    "sysmon_unique_destination_count": {
+      "mean": 0.625,
+      "standard_deviation": 0.9921567416492215,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 1.0
+    },
+    "sysmon_dns_query_count": {
+      "mean": 0.2916666666666667,
+      "standard_deviation": 1.059841445164742,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    },
+    "sysmon_file_create_count": {
+      "mean": 5.666666666666667,
+      "standard_deviation": 7.431165603202651,
+      "median": 2.0,
+      "q1": 1.0,
+      "q3": 6.25
+    },
+    "sysmon_file_delete_count": {
+      "mean": 0.4166666666666667,
+      "standard_deviation": 1.3819269959814167,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    },
+    "sysmon_registry_event_count": {
+      "mean": 0.0,
+      "standard_deviation": 0.0,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    },
+    "osquery_process_count_delta": {
+      "mean": 0.25,
+      "standard_deviation": 1.299038105676658,
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0
+    }
+  }
+}

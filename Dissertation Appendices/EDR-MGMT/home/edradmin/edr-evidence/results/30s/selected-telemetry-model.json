@@ -1,0 +1,31 @@
+{
+  "protocol_id": "EDR-MSC-FINAL",
+  "selection_design": "temporal",
+  "model": "random_forest",
+  "feature_set": "telemetry_only",
+  "features": [
+    "sysmon_process_create_count",
+    "sysmon_unique_process_image_count",
+    "sysmon_powershell_process_count",
+    "sysmon_cmd_process_count",
+    "sysmon_unique_parent_child_pair_count",
+    "sysmon_network_connect_count",
+    "sysmon_unique_destination_count",
+    "sysmon_dns_query_count",
+    "sysmon_file_create_count",
+    "sysmon_file_delete_count",
+    "sysmon_registry_event_count",
+    "osquery_process_count_delta"
+  ],
+  "threshold": 0.36000000000000004,
+  "validation_mcc": 0.8757605390397141,
+  "validation_false_positive_rate": 0.041666666666666664,
+  "validation_recall": 0.9166666666666666,
+  "run_score_primary": "maximum window probability",
+  "limitations": [
+    "Synthetic non-destructive behaviours",
+    "One Windows endpoint",
+    "No human usability study",
+    "Not evidence of unrestricted malware detection"
+  ]
+}
