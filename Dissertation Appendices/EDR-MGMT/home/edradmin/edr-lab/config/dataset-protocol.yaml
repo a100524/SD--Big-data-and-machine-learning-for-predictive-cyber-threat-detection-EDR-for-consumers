@@ -1,0 +1,83 @@
+protocol_id: EDR-MSC-FINAL
+research_title: Big data and machine learning for predictive cyber threat detection EDR for consumers
+primary_experimental_unit: run_id
+endpoint_observation_window_seconds: 30
+active_windows_per_run: 4
+baseline_seconds: 60
+active_seconds: 120
+grace_seconds: 60
+clock_max_absolute_offset_seconds: 0.5
+osquery_boundary_tolerance_seconds: 35
+pilot_runs_per_family: 5
+formal_runs_per_family: 6
+collection_sessions: 3
+runs_per_family_per_session: 2
+
+# Fix one independent schedule-order seed for each Formal collection session.
+random_seeds:
+  session_01: 4201
+  session_02: 4202
+  session_03: 4203
+
+# Map the six controlled behavioural families to their binary labels and stable names.
+families:
+  B1: {label: 0, name: document_workflow}
+  B2: {label: 0, name: system_inventory}
+  B3: {label: 0, name: legitimate_powershell_maintenance}
+  S1: {label: 1, name: file_registry_burst}
+  S2: {label: 1, name: powershell_discovery_changed_file_pattern}
+  S3: {label: 1, name: process_chain_internal_network_burst}
+
+# Retain two controlled variants for every family in each collection session.
+variants: [V1, V2]
+
+# Define the exact model inputs. Metadata, labels, and split identifiers are excluded.
+feature_sets:
+  telemetry_only:
+    - sysmon_process_create_count
+    - sysmon_unique_process_image_count
+    - sysmon_powershell_process_count
+    - sysmon_cmd_process_count
+    - sysmon_unique_parent_child_pair_count
+    - sysmon_network_connect_count
+    - sysmon_unique_destination_count
+    - sysmon_dns_query_count
+    - sysmon_file_create_count
+    - sysmon_file_delete_count
+    - sysmon_registry_event_count
+    - osquery_process_count_delta
+  hybrid_additions:
+    - suricata_alert_count
+    - wazuh_level_00_count
+    - wazuh_level_01_count
+    - wazuh_level_02_count
+    - wazuh_level_03_count
+    - wazuh_level_04_count
+    - wazuh_level_05_count
+    - wazuh_level_06_count
+    - wazuh_level_07_count
+    - wazuh_level_08_count
+    - wazuh_level_09_count
+    - wazuh_level_10_count
+    - wazuh_level_11_count
+    - wazuh_level_12_count
+    - wazuh_level_13_count
+    - wazuh_level_14_count
+    - wazuh_level_15_count
+
+# Select the decision threshold on validation data before test evaluation.
+threshold_selection:
+  primary: maximise_validation_mcc
+  tie_breaker: lower_validation_false_positive_rate
+
+# Fix grouped uncertainty estimation and general experiment reproducibility.
+bootstrap_repetitions: 200
+random_seed: 42
+
+# Reject Formal data when any source, split, schema, or completeness control fails.
+formal_acceptance:
+  complete_manifests: true
+  complete_source_exports: true
+  one_split_per_run: true
+  no_forbidden_columns_in_features: true
+  no_missing_required_features: true

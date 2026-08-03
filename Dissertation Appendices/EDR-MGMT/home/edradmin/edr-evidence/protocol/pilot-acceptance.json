@@ -1,0 +1,52 @@
+{
+  "protocol_id": "EDR-MSC-FINAL",
+  "passed": true,
+  "checks": [
+    {
+      "check": "pilot_mode_only",
+      "passed": true,
+      "details": "['Pilot']"
+    },
+    {
+      "check": "minimum_30_valid_runs",
+      "passed": true,
+      "details": "valid_runs=30"
+    },
+    {
+      "check": "all_six_families",
+      "passed": true,
+      "details": "{'B1': 5, 'B2': 5, 'B3': 5, 'S1': 5, 'S2': 5, 'S3': 5}"
+    },
+    {
+      "check": "minimum_five_per_family",
+      "passed": true,
+      "details": "{'B1': 5, 'B2': 5, 'B3': 5, 'S1': 5, 'S2': 5, 'S3': 5}"
+    },
+    {
+      "check": "both_variants_present",
+      "passed": true,
+      "details": "V1 and V2 required per family"
+    },
+    {
+      "check": "no_excluded_runs",
+      "passed": true,
+      "details": "excluded=0"
+    },
+    {
+      "check": "no_missing_dataset_values",
+      "passed": true,
+      "details": "{}"
+    },
+    {
+      "check": "primary_features_exercised",
+      "passed": true,
+      "details": "{'osquery_process_count_delta': 40, 'sysmon_cmd_process_count': 20, 'sysmon_file_create_count': 102, 'sysmon_network_connect_count': 31, 'sysmon_powershell_process_count': 5, 'sysmon_process_create_count': 47, 'sysmon_registry_event_count': 10, 'sysmon_unique_destination_count': 31, 'sysmon_unique_parent_child_pair_count': 47, 'sysmon_unique_process_image_count': 47}"
+    },
+    {
+      "check": "automated_tests_passed",
+      "passed": true,
+      "details": "................                                                         [100%]\n16 passed in 2.21s\n"
+    }
+  ],
+  "required_action_before_formal": "freeze protocol and package"
+}

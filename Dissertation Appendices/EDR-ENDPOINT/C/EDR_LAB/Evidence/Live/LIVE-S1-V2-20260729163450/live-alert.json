@@ -1,0 +1,36 @@
+{
+  "generated_utc": "2026-07-29T14:35:39.983003+00:00",
+  "protocol_id": "EDR-MSC-FINAL",
+  "score": 0.69125,
+  "threshold": 0.36000000000000004,
+  "prediction": 1,
+  "top_benign_reference_deviations": [
+    {
+      "feature": "sysmon_powershell_process_count",
+      "value": 1.0,
+      "benign_mean": 0.0,
+      "benign_standard_deviation": 0.0,
+      "z_score": 999.0,
+      "absolute_z_score": 999.0
+    },
+    {
+      "feature": "sysmon_network_connect_count",
+      "value": 74.0,
+      "benign_mean": 1.0416666666666667,
+      "benign_standard_deviation": 1.7435396627423063,
+      "z_score": 41.84495190581535,
+      "absolute_z_score": 41.84495190581535
+    },
+    {
+      "feature": "sysmon_unique_destination_count",
+      "value": 11.0,
+      "benign_mean": 0.625,
+      "benign_standard_deviation": 0.9921567416492215,
+      "z_score": 10.45701708658862,
+      "absolute_z_score": 10.45701708658862
+    }
+  ],
+  "plain_language_summary": "The model threshold was exceeded. The largest deviations from benign training windows involved PowerShell launches, network connections, distinct network destinations.",
+  "recommended_safe_action": "Review the recorded processes, generated files, registry changes, and internal connections before any response action.",
+  "warning": "This is a controlled laboratory classification. It does not establish that malware caused the events."
+}

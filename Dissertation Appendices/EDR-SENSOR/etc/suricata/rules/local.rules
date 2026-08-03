@@ -1,0 +1,3 @@
+alert icmp any any -> $HOME_NET any (msg:"EDR LAB ICMP test"; sid:1000001; rev:1;)
+alert http any any -> $HOME_NET any (msg:"EDR LAB HTTP request"; flow:to_server,established; sid:1000002; rev:1;)
+alert tcp any any -> $HOME_NET 8888 (msg:"EDR LAB CALDERA connection"; flow:to_server; flags:S; sid:1000003; rev:2;)

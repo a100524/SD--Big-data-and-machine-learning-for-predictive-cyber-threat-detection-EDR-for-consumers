@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Sysmon schemaversion="4.82">
+  <CheckRevocation>true</CheckRevocation>
+  <DnsLookup>false</DnsLookup>
+  <EventFiltering>
+    <ProcessCreate onmatch="exclude" />
+    <NetworkConnect onmatch="exclude" />
+    <DnsQuery onmatch="exclude" />
+    <FileCreate onmatch="include">
+      <TargetFilename condition="begin with">C:\EDR_LAB\</TargetFilename>
+    </FileCreate>
+    <FileDeleteDetected onmatch="include">
+      <TargetFilename condition="begin with">C:\EDR_LAB\</TargetFilename>
+    </FileDeleteDetected>
+    <RegistryEvent onmatch="include">
+      <TargetObject condition="contains">\Software\EDR_LAB\</TargetObject>
+    </RegistryEvent>
+  </EventFiltering>
+</Sysmon>

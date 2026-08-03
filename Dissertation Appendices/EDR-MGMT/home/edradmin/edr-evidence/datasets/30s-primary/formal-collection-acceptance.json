@@ -1,0 +1,56 @@
+{
+  "protocol_id": "EDR-MSC-FINAL",
+  "passed": true,
+  "checks": [
+    {
+      "check": "formal_mode_only",
+      "passed": true,
+      "details": "['Formal']"
+    },
+    {
+      "check": "exactly_36_runs",
+      "passed": true,
+      "details": "runs=36"
+    },
+    {
+      "check": "exactly_6_per_family",
+      "passed": true,
+      "details": "{'B1': 6, 'B2': 6, 'B3': 6, 'S1': 6, 'S2': 6, 'S3': 6}"
+    },
+    {
+      "check": "exactly_12_per_session",
+      "passed": true,
+      "details": "{'S01': 12, 'S02': 12, 'S03': 12}"
+    },
+    {
+      "check": "two_per_family_per_session",
+      "passed": true,
+      "details": "{('S01', 'B1'): 2, ('S01', 'B2'): 2, ('S01', 'B3'): 2, ('S01', 'S1'): 2, ('S01', 'S2'): 2, ('S01', 'S3'): 2, ('S02', 'B1'): 2, ('S02', 'B2'): 2, ('S02', 'B3'): 2, ('S02', 'S1'): 2, ('S02', 'S2'): 2, ('S02', 'S3'): 2, ('S03', 'B1'): 2, ('S03', 'B2'): 2, ('S03', 'B3'): 2, ('S03', 'S1'): 2, ('S03', 'S2'): 2, ('S03', 'S3'): 2}"
+    },
+    {
+      "check": "one_variant_run_per_family_per_session",
+      "passed": true,
+      "details": "{('S01', 'B1', 'V1'): 1, ('S01', 'B1', 'V2'): 1, ('S01', 'B2', 'V1'): 1, ('S01', 'B2', 'V2'): 1, ('S01', 'B3', 'V1'): 1, ('S01', 'B3', 'V2'): 1, ('S01', 'S1', 'V1'): 1, ('S01', 'S1', 'V2'): 1, ('S01', 'S2', 'V1'): 1, ('S01', 'S2', 'V2'): 1, ('S01', 'S3', 'V1'): 1, ('S01', 'S3', 'V2'): 1, ('S02', 'B1', 'V1'): 1, ('S02', 'B1', 'V2'): 1, ('S02', 'B2', 'V1'): 1, ('S02', 'B2', 'V2'): 1, ('S02', 'B3', 'V1'): 1, ('S02', 'B3', 'V2'): 1, ('S02', 'S1', 'V1'): 1, ('S02', 'S1', 'V2'): 1, ('S02', 'S2', 'V1'): 1, ('S02', 'S2', 'V2'): 1, ('S02', 'S3', 'V1'): 1, ('S02', 'S3', 'V2'): 1, ('S03', 'B1', 'V1'): 1, ('S03', 'B1', 'V2'): 1, ('S03', 'B2', 'V1'): 1, ('S03', 'B2', 'V2'): 1, ('S03', 'B3', 'V1'): 1, ('S03', 'B3', 'V2'): 1, ('S03', 'S1', 'V1'): 1, ('S03', 'S1', 'V2'): 1, ('S03', 'S2', 'V1'): 1, ('S03', 'S2', 'V2'): 1, ('S03', 'S3', 'V1'): 1, ('S03', 'S3', 'V2'): 1}"
+    },
+    {
+      "check": "no_excluded_runs",
+      "passed": true,
+      "details": "excluded=0"
+    },
+    {
+      "check": "four_windows_per_run",
+      "passed": true,
+      "details": "rows=144"
+    },
+    {
+      "check": "balanced_classes",
+      "passed": true,
+      "details": "{'0': 18, '1': 18}"
+    },
+    {
+      "check": "no_missing_values",
+      "passed": true,
+      "details": "{}"
+    }
+  ]
+}

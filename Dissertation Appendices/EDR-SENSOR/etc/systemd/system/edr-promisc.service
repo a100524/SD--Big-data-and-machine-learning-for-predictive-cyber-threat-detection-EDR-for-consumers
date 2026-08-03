@@ -1,0 +1,9 @@
+[Unit]
+Description=Enable promiscuous mode on EDR sensor interface
+After=network.target
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/ip link set eth1 promisc on
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target

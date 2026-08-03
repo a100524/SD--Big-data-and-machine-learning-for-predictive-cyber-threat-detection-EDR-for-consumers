@@ -1,0 +1,73 @@
+{
+  "protocol_id": "EDR-MSC-FINAL",
+  "window_seconds": 30,
+  "included_modes": [
+    "Formal"
+  ],
+  "primary_experimental_unit": "run_id",
+  "telemetry_only_features": [
+    "sysmon_process_create_count",
+    "sysmon_unique_process_image_count",
+    "sysmon_powershell_process_count",
+    "sysmon_cmd_process_count",
+    "sysmon_unique_parent_child_pair_count",
+    "sysmon_network_connect_count",
+    "sysmon_unique_destination_count",
+    "sysmon_dns_query_count",
+    "sysmon_file_create_count",
+    "sysmon_file_delete_count",
+    "sysmon_registry_event_count",
+    "osquery_process_count_delta"
+  ],
+  "hybrid_features": [
+    "sysmon_process_create_count",
+    "sysmon_unique_process_image_count",
+    "sysmon_powershell_process_count",
+    "sysmon_cmd_process_count",
+    "sysmon_unique_parent_child_pair_count",
+    "sysmon_network_connect_count",
+    "sysmon_unique_destination_count",
+    "sysmon_dns_query_count",
+    "sysmon_file_create_count",
+    "sysmon_file_delete_count",
+    "sysmon_registry_event_count",
+    "osquery_process_count_delta",
+    "suricata_alert_count",
+    "wazuh_level_00_count",
+    "wazuh_level_01_count",
+    "wazuh_level_02_count",
+    "wazuh_level_03_count",
+    "wazuh_level_04_count",
+    "wazuh_level_05_count",
+    "wazuh_level_06_count",
+    "wazuh_level_07_count",
+    "wazuh_level_08_count",
+    "wazuh_level_09_count",
+    "wazuh_level_10_count",
+    "wazuh_level_11_count",
+    "wazuh_level_12_count",
+    "wazuh_level_13_count",
+    "wazuh_level_14_count",
+    "wazuh_level_15_count"
+  ],
+  "forbidden_feature_columns": [
+    "behavioural_family",
+    "family_id",
+    "label",
+    "mode",
+    "protocol_id",
+    "run_id",
+    "sample_filename",
+    "scenario_name",
+    "session_id",
+    "split",
+    "variant_id",
+    "window_end_utc",
+    "window_index",
+    "window_start_utc"
+  ],
+  "baseline_metadata": [
+    "exact_indicator_prediction",
+    "rule_baseline_prediction"
+  ]
+}

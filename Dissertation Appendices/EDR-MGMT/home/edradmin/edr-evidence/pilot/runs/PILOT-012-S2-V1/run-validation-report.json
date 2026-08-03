@@ -1,0 +1,163 @@
+{
+  "run_id": "PILOT-012-S2-V1",
+  "validated_utc": "2026-07-27T14:55:06.946367+00:00",
+  "expected_mode": "Pilot",
+  "passed": true,
+  "checks": [
+    {
+      "check": "required:manifest-start.json",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/manifest-start.json"
+    },
+    {
+      "check": "required:manifest-complete.json",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/manifest-complete.json"
+    },
+    {
+      "check": "required:action-log.jsonl",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/action-log.jsonl"
+    },
+    {
+      "check": "required:preflight.json",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/preflight.json"
+    },
+    {
+      "check": "required:rollback.json",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/rollback.json"
+    },
+    {
+      "check": "required:endpoint-export-summary.json",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/endpoint-export-summary.json"
+    },
+    {
+      "check": "required:sysmon-events.jsonl",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/sysmon-events.jsonl"
+    },
+    {
+      "check": "required:osqueryd.snapshots.log",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/osqueryd.snapshots.log"
+    },
+    {
+      "check": "required:wazuh-alerts.jsonl",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/wazuh-alerts.jsonl"
+    },
+    {
+      "check": "required:wazuh-export-report.json",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/wazuh-export-report.json"
+    },
+    {
+      "check": "required:suricata-events.jsonl",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/suricata-events.jsonl"
+    },
+    {
+      "check": "required:suricata-export-report.json",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/suricata-export-report.json"
+    },
+    {
+      "check": "required:resource-samples.csv",
+      "passed": true,
+      "details": "/home/edradmin/edr-evidence/runs/.PILOT-012-S2-V1.completing/resource-samples.csv"
+    },
+    {
+      "check": "manifest_match:run_id",
+      "passed": true,
+      "details": "start='PILOT-012-S2-V1' complete='PILOT-012-S2-V1'"
+    },
+    {
+      "check": "manifest_match:session_id",
+      "passed": true,
+      "details": "start='PILOT' complete='PILOT'"
+    },
+    {
+      "check": "manifest_match:family_id",
+      "passed": true,
+      "details": "start='S2' complete='S2'"
+    },
+    {
+      "check": "manifest_match:variant_id",
+      "passed": true,
+      "details": "start='V1' complete='V1'"
+    },
+    {
+      "check": "manifest_match:label",
+      "passed": true,
+      "details": "start=1 complete=1"
+    },
+    {
+      "check": "manifest_match:mode",
+      "passed": true,
+      "details": "start='Pilot' complete='Pilot'"
+    },
+    {
+      "check": "mode_expected",
+      "passed": true,
+      "details": "mode='Pilot'"
+    },
+    {
+      "check": "protocol_id",
+      "passed": true,
+      "details": "EDR-MSC-FINAL"
+    },
+    {
+      "check": "run_status",
+      "passed": true,
+      "details": "completed"
+    },
+    {
+      "check": "action_record_count",
+      "passed": true,
+      "details": "4"
+    },
+    {
+      "check": "failed_action_count",
+      "passed": true,
+      "details": "0"
+    },
+    {
+      "check": "expected_window_count",
+      "passed": true,
+      "details": "4"
+    },
+    {
+      "check": "preflight.json:passed",
+      "passed": true,
+      "details": "value=True expected=True"
+    },
+    {
+      "check": "rollback.json:success",
+      "passed": true,
+      "details": "value=True expected=True"
+    },
+    {
+      "check": "endpoint-export-summary.json:complete",
+      "passed": true,
+      "details": "value=True expected=True"
+    },
+    {
+      "check": "wazuh-export-report.json:complete",
+      "passed": true,
+      "details": "value=True expected=True"
+    },
+    {
+      "check": "suricata-export-report.json:complete",
+      "passed": true,
+      "details": "value=True expected=True"
+    },
+    {
+      "check": "action_log_four_completed",
+      "passed": true,
+      "details": "records=4 errors=0"
+    }
+  ]
+}

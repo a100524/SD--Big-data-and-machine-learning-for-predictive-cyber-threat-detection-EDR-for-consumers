@@ -1,0 +1,102 @@
+[
+    {
+        "Name":  "AggregatorHost",
+        "Id":  5040,
+        "Path":  "C:\\WINDOWS\\System32\\AggregatorHost.exe"
+    },
+    {
+        "Name":  "conhost",
+        "Id":  1856,
+        "Path":  "C:\\WINDOWS\\system32\\conhost.exe"
+    },
+    {
+        "Name":  "conhost",
+        "Id":  1868,
+        "Path":  "C:\\WINDOWS\\system32\\conhost.exe"
+    },
+    {
+        "Name":  "conhost",
+        "Id":  4404,
+        "Path":  "C:\\WINDOWS\\system32\\conhost.exe"
+    },
+    {
+        "Name":  "CrossDeviceResume",
+        "Id":  7492,
+        "Path":  "C:\\WINDOWS\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\CrossDeviceResume.exe"
+    },
+    {
+        "Name":  "csrss",
+        "Id":  760,
+        "Path":  null
+    },
+    {
+        "Name":  "csrss",
+        "Id":  840,
+        "Path":  null
+    },
+    {
+        "Name":  "csrss",
+        "Id":  5236,
+        "Path":  null
+    },
+    {
+        "Name":  "ctfmon",
+        "Id":  10172,
+        "Path":  "C:\\WINDOWS\\system32\\ctfmon.exe"
+    },
+    {
+        "Name":  "dllhost",
+        "Id":  8788,
+        "Path":  "C:\\WINDOWS\\system32\\DllHost.exe"
+    },
+    {
+        "Name":  "dwm",
+        "Id":  1276,
+        "Path":  "C:\\WINDOWS\\system32\\dwm.exe"
+    },
+    {
+        "Name":  "dwm",
+        "Id":  5724,
+        "Path":  "C:\\WINDOWS\\system32\\dwm.exe"
+    },
+    {
+        "Name":  "elevation_service",
+        "Id":  10500,
+        "Path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\150.0.4078.83\\elevation_service.exe"
+    },
+    {
+        "Name":  "explorer",
+        "Id":  6232,
+        "Path":  "C:\\WINDOWS\\Explorer.EXE"
+    },
+    {
+        "Name":  "fontdrvhost",
+        "Id":  1016,
+        "Path":  "C:\\WINDOWS\\system32\\fontdrvhost.exe"
+    },
+    {
+        "Name":  "fontdrvhost",
+        "Id":  1032,
+        "Path":  "C:\\WINDOWS\\system32\\fontdrvhost.exe"
+    },
+    {
+        "Name":  "fontdrvhost",
+        "Id":  5680,
+        "Path":  "C:\\WINDOWS\\system32\\fontdrvhost.exe"
+    },
+    {
+        "Name":  "Idle",
+        "Id":  0,
+        "Path":  null
+    },
+    {
+        "Name":  "LogonUI",
+        "Id":  1268,
+        "Path":  "C:\\WINDOWS\\system32\\LogonUI.exe"
+    },
+    {
+        "Name":  "lsass",
+        "Id":  1000,
+        "Path":  "C:\\WINDOWS\\system32\\lsass.exe"
+    }
+]

@@ -1,0 +1,14 @@
+[Unit]
+Description=EDR laboratory MLflow server
+After=network-online.target
+Wants=network-online.target
+[Service]
+Type=simple
+User=edradmin
+WorkingDirectory=/home/edradmin/edr-ml
+Environment=PATH=/home/edradmin/edr-ml/.venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+ExecStart=/home/edradmin/edr-ml/.venv/bin/mlflow server --host 0.0.0.0 --port 5000 --backend-store-uri sqlite:////home/edradmin/edr-ml/mlflow/mlflow.db --default-artifact-root /home/edradmin/edr-ml/mlflow/artifacts --allowed-hosts localhost:*,127.0.0.1:*,10.50.0.10:5000
+Restart=on-failure
+RestartSec=5
+[Install]
+WantedBy=multi-user.target
